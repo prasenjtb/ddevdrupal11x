@@ -1,0 +1,87 @@
+# ============================
+# Drupal 11 .gitignore Example
+# ============================
+
+# Ignore configuration files that are specific to your local setup.
+sites/*/settings.local.php
+sites/*/services.local.yml
+
+sites/default/settings.php
+sites/example.sites.php
+
+web/sites/default/settings.php
+
+# Ignore the files directory (user uploads).
+sites/*/files
+sites/*/files-private
+
+# Ignore temporary files.
+sites/*/files/tmp
+sites/*/files/styles
+sites/*/files/php
+sites/*/files/css
+sites/*/files/js
+
+# Ignore the core directory.
+/web/core/
+
+# Ignore the contrib modules directory.
+/web/modules/contrib/
+
+# Ignore the contrib themes directory.
+/web/themes/contrib/
+
+/web/profiles/contrib/
+/web/libraries/
+
+
+# Ignore composer vendor directory.
+vendor/
+# But keep composer files.
+!composer.json
+!composer.lock
+
+# Ignore node-related files (if using a frontend build).
+node_modules/
+npm-debug.log
+yarn-error.log
+.pnpm-debug.log
+
+# Ignore build artifacts.
+dist/
+build/
+
+# Ignore IDE/editor files.
+*.swp
+*.swo
+*.bak
+*.orig
+*.log
+*.idea/
+*.vscode/
+
+# Ignore OS files.
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Ignore PHPUnit caches and results.
+.phpunit.result.cache
+phpunit.xml
+phpunit.xml.dist
+
+# Ignore environment files.
+.env
+.env.local
+.env.*.local
+
+# Ignore Drush local configuration.
+.drush/
+.drush-backups/
+
+# Ignore DDEV or Lando local dev configs (if applicable).
+.ddev/
+.lando.yml
+
+# Ignore Composer patches log
+composer.patches.log
