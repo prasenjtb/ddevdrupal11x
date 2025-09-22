@@ -22,9 +22,6 @@ sites/*/files/php
 sites/*/files/css
 sites/*/files/js
 
-web/sites/default/files/css/
-web/sites/default/files/js/
-
 # Ignore the core directory.
 /web/core/
 
